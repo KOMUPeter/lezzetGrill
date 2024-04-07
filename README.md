@@ -13,7 +13,7 @@ Le projet Lezzet Grill est né de l'intersection de mes aspirations professionne
 
 En entreprenant le projet Lezzet Grill, mon objectif principal était d'élargir et d'améliorer mon portfolio en mettant en valeur ma maîtrise du développement React. En participant activement à la création d'une application fonctionnelle et esthétiquement plaisante, j'ai cherché à démontrer ma capacité à conceptualiser, designer et implémenter des solutions innovantes dans un cadre spécifié.
 
-## Méthod de travail
+## Méthode de travail
 J'ai mis en place un projet sur GitHub Projects où j'ai répertorié les étapes à suivre sous forme de tickets. Chaque ticket représentait une étape spécifique du processus de développement. J'ai ensuite utilisé les colonnes "To Do", "In Progress""To Review", et  "Done", pour organiser ces tickets en fonction de leur statut actuel. Cette approche m'a permis de visualiser clairement l'avancement du projet et de prioriser les tâches en conséquence.
 
 ## Collaboration avec le Client
