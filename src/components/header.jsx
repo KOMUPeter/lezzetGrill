@@ -68,7 +68,7 @@ export default function MyNavbar() {
               }
               onClick={() => onUpdateAtiveLink("skills")}
             >
-              Notre carte
+              Voir notre carte
             </Nav.Link>
             <Nav.Link
               href="#apropos"
