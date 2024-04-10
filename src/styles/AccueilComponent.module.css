@@ -1,0 +1,84 @@
+.accueil {
+    margin-top: 100px;
+    position: relative;
+    text-align: center;
+}
+
+.carte {
+    width: 100%;
+    padding: 150px 0 0 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.carte h1,
+.carte p {
+    padding: 50px;
+    color: rgb(250, 249, 249);
+    /* color: rgb(253, 252, 246); */
+    text-shadow: -1px -1px 0 black,
+        1px -1px 0 rgb(136, 125, 31),
+        -1px 1px 0 rgb(194, 182, 13),
+        1px 1px 0 rgb(26, 25, 24);
+}
+.carte h1 {
+    letter-spacing: 10px;
+    font-size: 100px;
+}
+.carte p {
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+.carte button {
+    margin: 70px;
+    padding: 15px;
+    color: rgb(15, 15, 15);
+    border-radius: 10px;
+    background-color: #fad714;
+    border: 2px solid rgba(219, 173, 11, 1);
+    box-shadow: -3px -3px rgb(188, 189, 164);
+}
+.carte button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(149, 150, 106);
+}
+.carte div {
+    text-align: center;
+}
+
+.imagesContainer {
+    position: absolute;
+    z-index: 0;
+    width: 400%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.imgCont {
+    width: 25%;
+    height: 100%;
+    transition: all 1s ease;
+}
+
+.imgContChild {
+    width: 90vw;
+    height: 90vh;
+    object-fit: fill;
+}
+
+/*************************** RESPONSIVE ***************************/
+@media screen and (max-width: 600px) {
+    .carte {
+        padding: 0;
+    }
+    .carte h1 {
+        letter-spacing: 5px;
+        font-size: 80px;
+    }
+    .carte p {
+        letter-spacing: 3px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+}

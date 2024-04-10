@@ -1,14 +1,19 @@
-import HeaderComponent from "./components/header"
+import AccueilComponent from "./components/accueil";
+// import CarteComponent from "./components/carte";
+import MyNavbar from "./components/header";
 
 function App() {
-
   return (
     <>
-    <div>
-      <HeaderComponent/>
-    </div>
+      <div>
+        <MyNavbar />
+      </div>
+      <div>
+        <AccueilComponent />
+        {/* <CarteComponent/> */}
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
