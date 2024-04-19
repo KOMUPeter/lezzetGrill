@@ -1,0 +1,256 @@
+.allCartes {
+    margin-top: 100px;
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+.allCartes h1 {
+    padding: 20px 0 0;
+}
+
+.allCartes ul li {
+    background-color: black;
+    margin: 60px 20px;
+    border: 4px solid #3107cc;
+    color: #fcfcfb;
+}
+
+.menuContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.menuRight,
+.menuLeft,
+.MenuCenter {
+    text-align: center;
+}
+
+.menuRight h2,
+.menuLeft h2,
+.MenuCenter h1 {
+    padding: 10px;
+}
+.MenuCenter article img {
+    margin-top: 20px;
+}
+.menuRight div {
+    padding: 10px;
+}
+
+.menuRight div p {
+    padding: 2px;
+}
+
+.menuLeft div {
+    padding: 5px;
+}
+
+.allCartes h2 {
+    color: #fad714;
+}
+
+.verticalLine {
+    display: block;
+    width: 50px;
+    background-color: rgb(236, 199, 62);
+    height: 4px;
+    margin: 5px;
+}
+
+.sauce {
+    color: white !important;
+    /* margin: -20px; */
+    letter-spacing: 100px;
+    text-indent: 100px;
+}
+
+.souceList {
+    display: flex;
+    gap: 30px;
+    padding: 10px 0 30px;
+    justify-content: center;
+}
+
+.barAline {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.smallMenus {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.smallMenus div {
+    margin: 10px;
+}
+
+.tacosMenu div {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.menuRight,
+.menuLeft {
+    border: 3px dotted #fad71448;
+    margin: 20px;
+    padding: 20px;
+    width: 25%;
+}
+
+.menuLeft article {
+    padding: 10px;
+}
+
+.menuLeft span {
+    color: #fad714;
+}
+
+.ingredient,
+.supp {
+    color: rgba(46, 251, 140, 1);
+    font-size: 12px;
+}
+
+.supp {
+    padding-top: 30px;
+}
+
+.MenuCenter {
+    width: 40%;
+}
+
+.halalLogo {
+    height: 70px;
+}
+
+.menusAside {
+    display: flex;
+}
+
+.menuLeft div,
+.menuRight div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price {
+    color: #fad714;
+}
+
+.menuLeft div p:first-child,
+.menuRight div p:first-child {
+    text-align: center;
+}
+/* sandwichs */
+.sandWichesCenter > :nth-child(1),
+.sandWichesCenter > :nth-child(2),
+.sandWichesCenter > :nth-child(3) {
+  padding: 30px;
+}
+
+.sandWichesCenter img , .middle img{
+    max-height: 100px;
+}
+.sandwichTacos {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.smallSandwich>div>div {
+    padding: 10px;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+}
+
+.sandwichBarquette {
+    display: block !important;
+}
+.sandwichBarquette > div > :last-child {
+    margin-left: 0; /* Resetting the margin-left to its initial value */
+  }
+  
+
+/* ********************RESPONSIVE******************* */
+@media screen and (max-width: 700px) {
+    .allCartes ul {
+        background-color: rgb(247, 241, 241);
+        padding: 30px;
+    }
+
+    .allCartes ul li {
+        margin-top: 40px;
+        padding: 20px;
+    }
+
+    .sauce {
+        letter-spacing: 30px;
+        text-indent: 25px;
+    }
+
+    .MenuCenter {
+        order: -1 !important;
+    }
+
+    .MenuRight {
+        order: 0 !important;
+    }
+
+    .menuLeft {
+        order: 1 !important;
+    }
+
+    .menuContainer {
+        display: block;
+        /* Change to block display */
+    }
+
+    .MenuCenter {
+        border: 3px dotted #fad71448;
+        margin: 20px;
+        padding: 20px;
+    }
+    .sandwichBorder {
+        border: 3px dotted #fad71448;
+    }
+
+    .menuRight,
+    .MenuCenter,
+    .menuLeft {
+        width: 100%;
+        margin: 30px 0;
+    }
+
+    .smallMenus {
+        display: block;
+        margin: 20px;
+    }
+
+    .smallMenus div:first-child {
+        margin-top: 40px;
+    }
+
+    .smallMenus div:last-child {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .allCartes h2 {
+        font-size: 22px;
+    }
+    .verticalLine {
+        width: 30px;
+    }
+    .barAline {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+}
