@@ -1,5 +1,6 @@
-import AccueilComponent from "./components/accueil";
-// import CarteComponent from "./components/carte";
+// import AccueilComponent from "./components/accueil";
+import CarteComponent from "./components/carte";
+import FooterComponenet from "./components/footer";
 import MyNavbar from "./components/header";
 
 function App() {
@@ -9,8 +10,9 @@ function App() {
         <MyNavbar />
       </div>
       <div>
-        <AccueilComponent />
-        {/* <CarteComponent/> */}
+        {/* <AccueilComponent /> */}
+        <CarteComponent />
+        <FooterComponenet />
       </div>
     </>
   );

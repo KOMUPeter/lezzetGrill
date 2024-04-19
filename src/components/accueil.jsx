@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import image1 from "../assets/img/assiette.png";
-import image2 from "../assets/img/menuImages.png";
+import image2 from "../assets/img/burger.png";
 import image3 from "../assets/img/sandwichmenu.png";
 import image4 from "../assets/img/tacosMenu.png";
 import styles from "../styles/AccueilComponent.module.css";
