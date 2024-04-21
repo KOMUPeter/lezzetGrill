@@ -4,7 +4,6 @@ import logo from "../assets/img/logoYellow.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
-  faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 
 export default function MyNavbar() {
@@ -91,11 +90,8 @@ export default function MyNavbar() {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#">
+              <a href="https://www.instagram.com/lezzetgrill74?igsh=MWRsdWw0dGd3bWY5Mw%3D%3D&utm_source=qr">
                 <FontAwesomeIcon icon={faInstagram} />
-              </a>
-              <a href="">
-                <FontAwesomeIcon icon={faLinkedinIn} />
               </a>
             </div>
           </span>

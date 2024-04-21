@@ -76,7 +76,7 @@ export default function CarteComponent() {
   }, []);
 
   return (
-    <section id="carte" className={styles.allCartes}>
+    <section id="carte" className={`${styles.allCartes} container`}>
       <h1 className={styles.cartesH1}>Nos Carte</h1>
       <ul>
         {/* FIRST MENUS CARTE */}
