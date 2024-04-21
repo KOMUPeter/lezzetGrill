@@ -1,14 +1,10 @@
 .accueil {
     margin-top: 100px;
-    position: relative;
     text-align: center;
 }
-
 .carte {
     width: 100%;
     padding: 150px 0 0 0;
-    position: absolute;
-    z-index: 1;
 }
 
 .carte h1,
@@ -43,27 +39,6 @@
 }
 .carte div {
     text-align: center;
-}
-
-.imagesContainer {
-    position: absolute;
-    z-index: 0;
-    width: 400%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-.imgCont {
-    width: 25%;
-    height: 100%;
-    transition: all 1s ease;
-}
-
-.imgContChild {
-    width: 90vw;
-    height: 90vh;
-    object-fit: fill;
 }
 
 /*************************** RESPONSIVE ***************************/

@@ -1,7 +1,10 @@
-// import AccueilComponent from "./components/accueil";
-import CarteComponent from "./components/carte";
-import FooterComponenet from "./components/footer";
+import AccueilComponent from "./components/accueil";
+import AproposComponent from "./components/apropos";
 import MyNavbar from "./components/header";
+import CarteComponent from "./components/carte";
+import ContactComponent from "./components/contact";
+import FooterComponenet from "./components/footer";
+
 
 function App() {
   return (
@@ -10,8 +13,10 @@ function App() {
         <MyNavbar />
       </div>
       <div>
-        {/* <AccueilComponent /> */}
+        <AccueilComponent />
         <CarteComponent />
+        <AproposComponent />
+        <ContactComponent/>
         <FooterComponenet />
       </div>
     </>
