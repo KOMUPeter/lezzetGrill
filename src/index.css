@@ -23,14 +23,12 @@ h1, h2, h3, h4, h5, h6 {
     scroll-behavior: smooth;
     scroll-padding-top: 75px;
     color: black;
-    background-color: rgb(228, 226, 226);
   }
   body {
     font-weight: 400;
     overflow-x: hidden;
     position: relative;
     font-family: 'Roboto', sans-serif;
-    color: black !important;
   
   }
   p, a, li, button, ul {
@@ -72,24 +70,21 @@ nav.navbar {
     height: 80px;
     width: 80px;
   }
-  
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.733);
+  }
   .navbar.scrolled {
-    /* padding: 0px 0; */
-    background-color: rgb(247, 239, 239);
+    background-color: rgb(173, 161, 161);
   }
   
-  .scrolled .Brand img {
-    margin-top: -50px;
-  }
   nav.navbar a.navbar-brand {
       width: 9%;
   }
   nav.navbar .navbar-nav .nav-link.navbar-link {
     font-weight: 400;
-    color: black !important;
+    color: rgb(245, 240, 240) !important;
     letter-spacing: 0.8px;
     margin-left: 5px;
-    /* padding: 0 25px; */
     font-size: 18px;
     opacity: 0.75;
   }
@@ -107,25 +102,20 @@ nav.navbar {
       margin-left: 14px;
   }
   .social-icon a {
-      width: 42px;
-      height: 42px;
-      background: rgba(217, 217, 217, 0.1);
-      display: inline-flex;
-      border-radius: 50%;
-      margin-right: 6px;
-      align-items: center;
-      justify-content: center;
-      line-height: 1;
-      border: 1px solid rgba(240, 159, 10, 0.7);
-  }
-  .social-icon a .svg-inline--fa {
-    color: black;
-  }
-  .social-icon a:hover {
-    background: linear-gradient(90.21deg, rgba(236, 202, 4, 0.5) -5.91%, rgba(243, 219, 6, 0.5) 111.58%);
+    width: 42px;
+    height: 42px;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888, #ac1698, #9712a3, #820da1, #720d9e, #6a0d9d, #650d9e, #600d9f);
+    color: #fff;
+    display: inline-flex;
+    border-radius: 50%;
+    margin-right: 6px;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border: 1px solid #e95950; /* Adjust the border color to match Instagram */
   }
   .social-icon a:hover .svg-inline--fa {
-    color: black !important;
+    color: black;
   }
   .social-icon a::before {
       transition: 0.3s ease-in-out;
@@ -201,7 +191,7 @@ nav.navbar {
       top: 0;
       left: 0;
       content: '';
-      z-index: 2;
+      z-index: 3;
       transition: all 300ms linear;
   }
   nav.navbar .navbar-toggler-icon:after {
@@ -317,7 +307,20 @@ nav.navbar {
 }
 
 .footerCss ul a {
-  color: white;
+  width: 42px;
+    height: 42px;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888, #ac1698, #9712a3, #820da1, #720d9e, #6a0d9d, #650d9e, #600d9f);
+    color: #fff;
+    display: inline-flex;
+    border-radius: 50%;
+    margin-right: 6px;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border: 1px solid #e95950; 
+}
+.footerCss ul a:hover {
+  color: black;
 }
 
 .footerCss ul img {
@@ -329,17 +332,13 @@ nav.navbar {
 
 
 /********************** RESPONSIVE ************************/
-
-  @media screen and (max-width: 1100px) {
- 
-  
-  }
-  @media screen and (max-width: 900px) {
-    
-    
+  @media screen and (max-width: 768px) {
+    .contact {
+      padding: 20px 0 60px 0;
+    }
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 414px) {
       .contact {
         text-align: center;
       }
@@ -353,5 +352,8 @@ nav.navbar {
       }
       .contact form button {
         margin-top: 10px;
+      }
+      .contact {
+        padding: 10px 0 30px 0;
       }
   }

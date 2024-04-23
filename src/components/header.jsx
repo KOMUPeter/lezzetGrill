@@ -8,7 +8,7 @@ import {
 
 export default function MyNavbar() {
   const [activeLink, setActiveLink] = useState("home");
-  const [scrolled, setScrolled] = useState("false");
+  const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     const onScroll = () => {
       if (window.scrollY > 50) {
@@ -58,7 +58,7 @@ export default function MyNavbar() {
               }
               onClick={() => onUpdateAtiveLink("accueil")}
             >
-              Accueil
+              Accueil 
             </Nav.Link>
             <Nav.Link
               href="#carte"
@@ -90,9 +90,9 @@ export default function MyNavbar() {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="https://www.instagram.com/lezzetgrill74?igsh=MWRsdWw0dGd3bWY5Mw%3D%3D&utm_source=qr">
-                <FontAwesomeIcon icon={faInstagram} />
-              </a>
+            <a href="https://www.instagram.com/lezzetgrill74?igsh=MWRsdWw0dGd3bWY5Mw%3D%3D&utm_source=qr">
+              <FontAwesomeIcon icon={faInstagram} size="3x" />
+            </a>
             </div>
           </span>
         </Navbar.Collapse>

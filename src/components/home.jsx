@@ -1,12 +1,18 @@
+import AccueilComponent from "./accueil";
+import AproposComponent from "./apropos";
+import CarteComponent from "./carte";
+import ContactComponent from "./contact";
 
-import AccueilComponent from "./components/accueil.jsx";
-import CarteComponent from "./components/carte.jsx";
 
 export default function HomeComponent() {
   return (
-    <div>
-      <AccueilComponent />
-      <CarteComponent />
-    </div>
+    <>
+      <div>
+        <AccueilComponent />
+        <CarteComponent />
+        <AproposComponent />
+        <ContactComponent/>
+      </div>
+    </>
   );
 }

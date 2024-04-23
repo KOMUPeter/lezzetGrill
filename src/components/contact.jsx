@@ -15,7 +15,7 @@ export default function ContactComponent() {
     setFormDetails({
       ...formDetails,
       [field]: value,
-    });
+    }); 
   };
 
   const resetForm = () => {

@@ -12,7 +12,7 @@ export default function FooterComponenet() {
             </a>
           </li>
           <li>
-            <p>© Lezzet GRill 74</p>
+            <p>© Lezzet Grill 74</p> 
           </li>
           <li>
             <a href="https://www.instagram.com/lezzetgrill74?igsh=MWRsdWw0dGd3bWY5Mw%3D%3D&utm_source=qr">
