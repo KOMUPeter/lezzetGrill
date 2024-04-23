@@ -1,26 +1,26 @@
-import AccueilComponent from "./components/accueil";
-import AproposComponent from "./components/apropos";
+
+import { Route, Routes } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 import MyNavbar from "./components/header";
-import CarteComponent from "./components/carte";
-import ContactComponent from "./components/contact";
+import HomeComponent from "./components/home";
 import FooterComponenet from "./components/footer";
 
 
-function App() {
+export default function App() {
+
   return (
     <>
-      <div>
+    <div>
         <MyNavbar />
       </div>
-      <div>
-        <AccueilComponent />
-        <CarteComponent />
-        <AproposComponent />
-        <ContactComponent/>
+    <div>
+      <Routes>
+        <Route path='/' element={<HomeComponent/>}/>
+      </Routes>
+    </div>
+    <div>
         <FooterComponenet />
       </div>
     </>
-  );
+  )
 }
-
-export default App;

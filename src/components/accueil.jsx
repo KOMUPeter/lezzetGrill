@@ -4,7 +4,7 @@ import styles from "../styles/AccueilComponent.module.css";
 import image1 from "../assets/img/assiette.png";
 import image2 from "../assets/img/burger.png";
 import image3 from "../assets/img/sandwichmenu.png";
-import image4 from "../assets/img/tacosMenu.png";
+import image4 from "../assets/img/tacosMenu.png"; 
 
 export default function AccueilComponent() {
   const images = [image1, image2, image3, image4];
@@ -33,11 +33,11 @@ export default function AccueilComponent() {
       style={{
         backgroundImage: `url(${images[count]})`,
         backgroundRepeat: "no-repeat", 
-        backgroundSize: "cover",
-        backgroundPosition: "center" // Center the background image horizontally and vertically
+        backgroundSize: "contain", // Set background size to contain the image
+        backgroundPosition: "center",
       }}
     >
-      <article className={styles.carte}>
+      <article className={styles.accueilHome}>
         <div>
           <h1>Lezzet Grill</h1>
           <p>

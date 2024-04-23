@@ -11,7 +11,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export default function CarteComponent() {
   const [displayedItems, setDisplayedItems] = useState([]);
 
-  useEffect(() => {
+  useEffect(() => { 
     const items = [
       "*",
       "Sauce Blanche",
@@ -77,6 +77,7 @@ export default function CarteComponent() {
 
   return (
     <section id="carte" className={`${styles.allCartes} container`}>
+      <hr />
       <h1 className={styles.cartesH1}>Nos Carte</h1>
       <ul>
         {/* FIRST MENUS CARTE */}
@@ -170,7 +171,7 @@ export default function CarteComponent() {
                   <div className={styles.smallMenus}>
                     {/* tacosMenu */}
                     <div className={styles.tacosMenu}>
-                      <h4>Menu Tacos</h4>
+                      <h2>Menu Tacos</h2>
                       <div>
                         <p>Classique</p>
                         <p className={styles.price}>12.00 €</p>
@@ -187,10 +188,10 @@ export default function CarteComponent() {
                     </div>
                     {/* menu enfant */}
                     <div className={styles.enfantMenu}>
-                      <h4>Menu Enfant</h4>
+                      <h2>Menu Enfant</h2>
                       <div className="d-flex justify-content-between">
                         <p>Classique</p>
-                        <p className={styles.price}>12.00 €</p>
+                        <p className={styles.price}>9.00 €</p>
                       </div>
                       <div>
                         <p>Frites</p>
@@ -372,7 +373,7 @@ export default function CarteComponent() {
                     <div>
                       <h2>TACOS</h2>
                       <span className={styles.sandwichTacos}>
-                        {"(Viende Au Choix)"}
+                        {"(Viande Au Choix)"}
                       </span>
                       <div>
                         <p>Classique</p>
@@ -390,27 +391,27 @@ export default function CarteComponent() {
 
             {/* left */}
             <div className={styles.menuLeft}>
-              <article>
+              <article className={styles.asideLeftCenter}>
                 <h2>BURGER</h2>
                 <p>{"(Steak Haché Fait Maison)"}</p>
                 <div>
                   <p>Cheese</p>
-                  <p className={styles.price}>16.00 €</p>
+                  <p className={styles.price}>6.50 €</p>
                 </div>
                 <div>
                   <p>Chicken</p>
-                  <p className={styles.price}>10.00 €</p>
+                  <p className={styles.price}>6.50 €</p>
                 </div>
                 <div>
                   <p>Köfte</p>
-                  <p className={styles.price}>10.00 €</p>
+                  <p className={styles.price}>6.50 €</p>
                 </div>
                 <div>
                   <p>Veggie</p>
-                  <p className={styles.price}>9.00 €</p>
+                  <p className={styles.price}>6.00 €</p>
                 </div>
               </article>
-              <article>
+              <article className={styles.asideLeftCenter}>
                 <span>*****</span>
                 <p>Supplément</p>
                 <div className={styles.ingredient}>
@@ -419,11 +420,11 @@ export default function CarteComponent() {
                 </div>
                 <span>*****</span>
               </article>
-              <article>
+              <article className={styles.asideLeftCenter}>
                 <h2>BARQUETTE</h2>
                 <div>
                   <p>FRITE</p>
-                  <p>VIENDE</p>
+                  <p>VIANDE</p>
                 </div>
 
                 <div className={styles.sandwichBarquette}>
@@ -540,7 +541,7 @@ export default function CarteComponent() {
                   <img src={assiette} alt="burger" />
                   <div className={styles.smallSandwich}>
                     {/* tacosSandwich */}
-                    <div>
+                    <div className={styles.screen1024}>
                       <h2>Assiette Spéciale</h2>
                       <div>
                         <p>Mix Lezzet Grill</p>
@@ -560,7 +561,6 @@ export default function CarteComponent() {
             <div className={styles.menuLeft}>
               <article>
                 <h2>ASSIETTES WEGGIES</h2>
-                <p>{"(Steak Haché Fait Maison)"}</p>
                 <div>
                   <p>Salade fromage feta</p>
                   <p className={styles.price}>12.00 €</p>
@@ -576,7 +576,7 @@ export default function CarteComponent() {
                 <span>*****</span>
                 <p>Supplément</p>
                 <div className={styles.ingredient}>
-                  <p>VIENDE</p>
+                  <p>VIANDE</p>
                   <p>+3.50 €</p>
                 </div>
                 <div className={styles.ingredient}>

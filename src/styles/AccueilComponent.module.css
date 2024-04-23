@@ -1,30 +1,30 @@
 .accueil {
-    margin-top: 100px;
+    margin-top: 115px;
     text-align: center;
 }
-.carte {
+.accueilHome {
     width: 100%;
     padding: 150px 0 0 0;
 }
 
-.carte h1,
-.carte p {
+.accueilHome h1,
+.accueilHome p {
     padding: 50px;
-    color: rgb(250, 249, 249);
+    color: rgb(248, 235, 235);
     text-shadow: -1px -1px 0 black,
-        1px -1px 0 rgb(136, 125, 31),
-        -1px 1px 0 rgb(194, 182, 13),
+        1px -1px 0 rgb(97, 93, 59),
+        -1px 1px 0 rgb(63, 60, 19),
         1px 1px 0 rgb(26, 25, 24);
 }
-.carte h1 {
+.accueilHome h1 {
     letter-spacing: 10px;
     font-size: 100px;
 }
-.carte p {
+.accueilHome p {
     letter-spacing: 5px;
     font-size: 20px;
 }
-.carte button {
+.accueilHome button {
     margin: 70px;
     padding: 15px;
     color: rgb(15, 15, 15);
@@ -33,26 +33,36 @@
     border: 2px solid rgba(219, 173, 11, 1);
     box-shadow: -3px -3px rgb(188, 189, 164);
 }
-.carte button:hover {
+.accueilHome button:hover {
     color: rgb(255, 255, 255);
     background-color: rgb(149, 150, 106);
 }
-.carte div {
+.accueilHome div {
     text-align: center;
 }
 
 /*************************** RESPONSIVE ***************************/
-@media screen and (max-width: 600px) {
-    .carte {
+@media screen and (max-width: 414px) {
+    .accueilHome h1,
+.accueilHome p {
+    padding: 0px;
+}
+}
+@media screen and (max-width: 414px) {
+    .accueilHome {
         padding: 0;
     }
-    .carte h1 {
+    .accueilHome h1 {
         letter-spacing: 5px;
         font-size: 80px;
     }
-    .carte p {
+    .accueilHome p {
         letter-spacing: 3px;
         font-size: 15px;
         font-weight: bold;
     }
+    .accueilHome h1,
+.accueilHome p {
+    padding: 30px;
+}
 }
