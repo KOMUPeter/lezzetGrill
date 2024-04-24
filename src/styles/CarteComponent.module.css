@@ -72,7 +72,9 @@
     padding: 10px 0 30px;
     justify-content: center;
 }
-
+.souceList hr {
+    color: white !important;
+}
 .barAline {
     display: flex;
     gap: 20px;
@@ -222,8 +224,11 @@
 }
 
 @media screen and (max-width: 800px) {
+    .sandWichesCenter img , .middle img{
+        max-height: contain;
+    }
     .souceList p {
-        font-size: 10px;
+        font-size: 15px;
         gap: 3px;
     }
     .allCartes ul {
@@ -277,6 +282,9 @@
 }
 
 @media screen and (max-width: 414px) {
+    .assieteImg {
+        max-height: 120px !important;
+    }
     .allCartes ul li {
         margin-top: 20px !important;
     }
