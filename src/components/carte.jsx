@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import styles from "../styles/CarteComponent.module.css"; // Correct import for styles
 import logoHalal from "../assets/img/logoHalal.png";
 import menuTacos from "../assets/img/tacosMenu.png";
@@ -11,72 +11,39 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export default function CarteComponent() {
   const [displayedItems, setDisplayedItems] = useState([]);
 
-  useEffect(() => { 
-    const items = [
-      "*",
+  const items = useMemo(
+    () => [
       "Sauce Blanche",
-      "*",
       "Harissa",
-      "*",
       "Samourai",
-      "*",
       "Algérienne",
-      "*",
       "Mayonnaise",
-      "*",
       "Ketchup",
-      "*",
       "Barbecue",
-      "*",
       "Moutarde",
-      "*",
       "Tartare",
-      "*",
       "Andalouse",
-      "*",
       "Biggy",
-      "*",
       "Biggy Burger",
-      "*",
-    ];
+    ],
+    []
+  );
 
-    let currentIndex = 0;
-    let isUpdating = false;
-    let intervalId;
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setDisplayedItems((prevItems) => {
+        const nextIndex =
+          prevItems[0] === items[0] && prevItems.length > 0 ? 6 : 0;
+        return items.slice(nextIndex, nextIndex + 4);
+      });
+    }, 2000);
 
-    function updateDisplayedItems() {
-      if (isUpdating) return;
-      isUpdating = true;
-      const endIndex = Math.min(currentIndex + 3, items.length);
-      const newItems = items.slice(currentIndex, endIndex);
-      setDisplayedItems(newItems);
-      currentIndex = endIndex === items.length ? 0 : endIndex;
-      setTimeout(() => {
-        isUpdating = false;
-      }, 100); // Delay to ensure previous update is completed
-    }
-
-    function handleResize() {
-      if (window.innerWidth < 700) {
-        intervalId = setInterval(updateDisplayedItems, 2000);
-      } else {
-        clearInterval(intervalId);
-        setDisplayedItems(items); // Display whole list on screens larger than 700px
-      }
-    }
-
-    handleResize(); // Initial call to handle screen size on component mount
-
-    window.addEventListener("resize", handleResize); // Listen for resize events
-
-    return () => {
-      clearInterval(intervalId); // Clear interval when component unmounts
-      window.removeEventListener("resize", handleResize); // Remove event listener
-    };
-  }, []);
+    return () => clearInterval(intervalId);
+  }, [items]);
 
   return (
     <section id="carte" className={`${styles.allCartes} container`}>
+      <hr />
       <hr />
       <h1 className={styles.cartesH1}>Nos Carte</h1>
       <ul>
@@ -275,7 +242,7 @@ export default function CarteComponent() {
           <h2 className={styles.sauce}>SAUCE</h2>
           <div className={styles.souceList}>
             {displayedItems.map((item, index) => (
-              <p key={index}>{item}</p>
+              <p key={index}>{"* " + item + " *"}</p>
             ))}
           </div>
         </li>
@@ -343,7 +310,7 @@ export default function CarteComponent() {
             </div>
 
             {/* center */}
-            <div  className={styles.sandwichBorder}>
+            <div className={styles.sandwichBorder}>
               <article>
                 <img
                   className={styles.halalLogo}
@@ -359,7 +326,11 @@ export default function CarteComponent() {
                       <span className={styles.verticalLine}></span>
                     </div>
                     <div>
-                      <h2>NOS<br/>SANDWICHS</h2>
+                      <h2>
+                        NOS
+                        <br />
+                        SANDWICHS
+                      </h2>
                     </div>
                     <div>
                       <span className={styles.verticalLine}></span>
@@ -450,7 +421,7 @@ export default function CarteComponent() {
           <h2 className={styles.sauce}>SAUCE</h2>
           <div className={styles.souceList}>
             {displayedItems.map((item, index) => (
-              <p key={index}>{item}</p>
+              <p key={index}>{"* " + item + " *"}</p>
             ))}
           </div>
         </li>
@@ -503,7 +474,7 @@ export default function CarteComponent() {
                   <p className={styles.price}>17.00 €</p>
                 </div>
                 <div>
-                <p>Brochette D&apos;agneau</p>
+                  <p>Brochette D&apos;agneau</p>
                   <p className={styles.price}>18.00 €</p>
                 </div>
                 <div>
@@ -538,7 +509,7 @@ export default function CarteComponent() {
                       <span className={styles.verticalLine}></span>
                     </div>
                   </div>
-                  <img src={assiette} alt="burger" />
+                  <img className={styles.assieteImg} src={assiette} alt="burger" />
                   <div className={styles.smallSandwich}>
                     {/* tacosSandwich */}
                     <div className={styles.screen1024}>
@@ -571,7 +542,6 @@ export default function CarteComponent() {
                 </div>
               </article>
 
-
               <article>
                 <span>*****</span>
                 <p>Supplément</p>
@@ -590,7 +560,7 @@ export default function CarteComponent() {
           <h2 className={styles.sauce}>SAUCE</h2>
           <div className={styles.souceList}>
             {displayedItems.map((item, index) => (
-              <p key={index}>{item}</p>
+              <p key={index}>{"* " + item + " *"}</p>
             ))}
           </div>
         </li>

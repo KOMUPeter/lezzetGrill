@@ -26,7 +26,7 @@ export default function AproposComponent() {
             <br />À la tombée de la nuit, un parking en sur sol offre à nos
             clients des stationnement exclusifs, garantissant une
             expérience culinaire sans souci. Chez Lezzet Grill, votre confort et
-            votre satisfaction sont notre priorité absolue.<br/><br/><button className="p-2" onClick={scrollToContact}><span>Retour a la carte</span></button>
+            votre satisfaction sont notre priorité absolue.<br/><br/><button className="p-2" onClick={scrollToContact}><span>Retour à la carte</span></button>
           </p>
 
           <iframe
