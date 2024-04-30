@@ -32,9 +32,11 @@
 .MenuCenter h1 {
     padding: 10px;
 }
+
 .MenuCenter article img {
     margin-top: 20px;
 }
+
 .menuRight div {
     padding: 10px;
 }
@@ -72,9 +74,11 @@
     padding: 10px 0 30px;
     justify-content: center;
 }
+
 .souceList hr {
     color: white !important;
 }
+
 .barAline {
     display: flex;
     gap: 20px;
@@ -87,6 +91,7 @@
     justify-content: center;
     gap: 40px;
 }
+
 .smallMenus div {
     margin: 8px;
 }
@@ -149,16 +154,19 @@
 .menuRight div p:first-child {
     text-align: center;
 }
+
 /* sandwichs */
-.sandWichesCenter > :nth-child(1),
-.sandWichesCenter > :nth-child(2),
-.sandWichesCenter > :nth-child(3) {
-  padding: 30px;
+.sandWichesCenter> :nth-child(1),
+.sandWichesCenter> :nth-child(2),
+.sandWichesCenter> :nth-child(3) {
+    padding: 30px;
 }
 
-.sandWichesCenter img , .middle img{
+.sandWichesCenter img,
+.middle img {
     max-height: 400px;
 }
+
 .sandwichTacos {
     font-weight: 700;
     font-size: 12px;
@@ -174,8 +182,19 @@
 .sandwichBarquette {
     display: block !important;
 }
-.sandwichBarquette > div > :last-child {
+
+.sandwichBarquette>div> :last-child {
     margin-left: 0;
+}
+
+.dessert {
+
+    background-color: #1b162e;
+    border: 5px dotted #ffffffd3; 
+    padding: 40px;
+}
+.dessert div {
+    padding: 5px;
 }
 
 /* ********************RESPONSIVE******************* */
@@ -184,59 +203,78 @@
         gap: 5px;
         padding: 15px 0 30px;
     }
+
     .allCartes ul li {
         margin: 30px 20px;
     }
+
     .allCartes {
         margin-top: 30px;
     }
+
     .allCartes h1 {
         margin-bottom: 20px;
     }
+
     .allCartes p {
         font-size: 13px;
     }
+
     .smallMenus {
         margin-top: 20px;
         gap: 0px;
     }
+
     .smallMenus div {
         margin: 3px;
     }
+
     .menuRight div {
         padding: 12px;
     }
-    .sandWichesCenter img , .middle img{
+
+    .sandWichesCenter img,
+    .middle img {
         max-height: 180px;
     }
+
     .asideLeftCenter div {
         padding: 10px;
     }
+
     .sandwichBarquette div {
         gap: 8px;
     }
+
     .screen1024 h2 {
         padding: 20px;
     }
+
     .screen1024 div {
         margin: 20px;
     }
 }
 
 @media screen and (max-width: 800px) {
-    .sandWichesCenter img , .middle img{
+
+    .sandWichesCenter img,
+    .middle img {
         max-height: contain;
     }
+
     .souceList p {
         font-size: 15px;
         gap: 3px;
     }
+
     .allCartes ul {
         padding: 20px;
     }
+
     .allCartes ul li {
         margin: 0px 0px;
     }
+
     .allCartes ul li {
         margin-top: 40px;
         padding: 20px;
@@ -256,6 +294,7 @@
         margin: 20px;
         padding: 20px;
     }
+
     .sandwichBorder {
         border: 3px dotted #fad71448;
     }
@@ -285,36 +324,44 @@
     .assieteImg {
         max-height: 120px !important;
     }
+
     .allCartes ul li {
         margin-top: 20px !important;
     }
+
     .allCartes h1 {
         margin-bottom: 0px;
     }
+
     .allCartes {
         margin-top: 0px;
     }
+
     #apropos h2 {
         margin-top: 0px;
     }
+
     .allCartes h2 {
         font-size: 22px;
     }
+
     .verticalLine {
         width: 30px;
     }
+
     .barAline {
         display: flex;
         gap: 10px;
         justify-content: center;
     }
+
     .allCartes p {
         font-size: 15px;
-    } 
+    }
 }
 
 @media screen and (max-width: 375px) {
     .allCartes p {
         font-size: 13px;
-    } 
+    }
 }

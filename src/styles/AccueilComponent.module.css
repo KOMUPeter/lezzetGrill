@@ -24,16 +24,20 @@
     letter-spacing: 5px;
     font-size: 20px;
 }
-.accueilHome button {
-    margin: 70px;
-    padding: 15px;
+.accueilHome div > div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.accueilHome div > div  button {
+    padding: 10px;
     color: rgb(15, 15, 15);
     border-radius: 10px;
     background-color: #fad714;
     border: 2px solid rgba(219, 173, 11, 1);
     box-shadow: -3px -3px rgb(188, 189, 164);
 }
-.accueilHome button:hover {
+.accueilHome div > div  button:hover {
     color: rgb(255, 255, 255);
     background-color: rgb(149, 150, 106);
 }
