@@ -451,7 +451,7 @@ export default function CarteComponent() {
                 </div>
                 <div>
                   <p>Escalope</p>
-                  <p className={styles.price}>11.00 €</p>
+                  <p className={styles.price}>13.00 €</p>
                 </div>
                 <div>
                   <p>Saucisse</p>
@@ -554,6 +554,29 @@ export default function CarteComponent() {
                   <p>+1.00 €</p>
                 </div>
                 <span>*****</span>
+              </article>
+              <article id="dessert" className={styles.dessert}>
+                <h2>NOS DESSERTS</h2>
+                <div>
+                  <p>Cheesecake </p>
+                  <p className={styles.price}>4.00 €</p>
+                </div>
+                <div>
+                  <p>Tiramisu</p>
+                  <p className={styles.price}>4.00 €</p>
+                </div>
+                <div>
+                  <p>Fondant au chocolat</p>
+                  <p className={styles.price}>4.00 €</p>
+                </div>
+                <div>
+                  <p>Tarte au daim</p>
+                  <p className={styles.price}>4.00 €</p>
+                </div>
+                <div>
+                  <p>Et baklava</p>
+                  <p className={styles.price}>4.00 €</p>
+                </div>
               </article>
             </div>
           </div>

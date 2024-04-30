@@ -4,7 +4,7 @@ import styles from "../styles/AccueilComponent.module.css";
 import image1 from "../assets/img/assiette.png";
 import image2 from "../assets/img/burger.png";
 import image3 from "../assets/img/sandwichmenu.png";
-import image4 from "../assets/img/tacosMenu.png"; 
+import image4 from "../assets/img/tacosMenu.png";
 
 export default function AccueilComponent() {
   const images = [image1, image2, image3, image4];
@@ -18,7 +18,7 @@ export default function AccueilComponent() {
     return () => clearInterval(interval);
   }, [images.length]);
 
-  const scrollToContact = () => {
+  const scrollToCarte = () => {
     const contactSection = document.getElementById("carte");
     if (contactSection) {
       const yOffset =
@@ -26,13 +26,21 @@ export default function AccueilComponent() {
       window.scrollTo({ top: yOffset, behavior: "smooth" });
     }
   };
+  const scrollToDessert = () => {
+    const dessertSection = document.getElementById("dessert");
+    if (dessertSection) {
+      const yOffset = dessertSection.offsetTop; // Get the offset top of the desserts section
+      window.scrollTo({ top: yOffset, behavior: "smooth" });
+    }
+  };
 
   return (
-    <section id="accueil"
+    <section
+      id="accueil"
       className={styles.accueil}
       style={{
         backgroundImage: `url(${images[count]})`,
-        backgroundRepeat: "no-repeat", 
+        backgroundRepeat: "no-repeat",
         backgroundSize: "contain", // Set background size to contain the image
         backgroundPosition: "center",
       }}
@@ -43,9 +51,13 @@ export default function AccueilComponent() {
           <p>
             Savourez la convenance et la saveur. Nos délices sont préparés avec
             soin, offrant une explosion de saveurs à chaque dégustation. Nous
-            sommes là pour satisfaire vos envies. Découvrez la différence chez nous
+            sommes là pour satisfaire vos envies. Découvrez la différence chez
+            nous
           </p>
-          <button onClick={scrollToContact}>Voir notre carte</button>
+          <div>
+            <button onClick={scrollToCarte}>Voir notre carte</button>
+            <button onClick={scrollToDessert}>Voir nos desserts</button>
+          </div>
         </div>
       </article>
     </section>
