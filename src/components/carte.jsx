@@ -239,7 +239,7 @@ export default function CarteComponent() {
               </article>
             </div>
           </div>
-          <h2 className={styles.sauce}>SAUCE</h2>
+          <h2 className={styles.sauce}>SAUCES</h2>
           <div className={styles.souceList}>
             {displayedItems.map((item, index) => (
               <p key={index}>{"* " + item + " *"}</p>
@@ -344,7 +344,8 @@ export default function CarteComponent() {
                     <div>
                       <h2>TACOS</h2>
                       <span className={styles.sandwichTacos}>
-                        {"(Viande Au Choix)"}
+                        {"(Viande Au Choix)"}<br/>
+                        {"(Kebab, Steak Haché, Köfte, Escalope, Tenders, Cordon bleu, Nuggets, Merguez)"}
                       </span>
                       <div>
                         <p>Classique</p>
@@ -418,7 +419,7 @@ export default function CarteComponent() {
               </article>
             </div>
           </div>
-          <h2 className={styles.sauce}>SAUCE</h2>
+          <h2 className={styles.sauce}>SAUCES</h2>
           <div className={styles.souceList}>
             {displayedItems.map((item, index) => (
               <p key={index}>{"* " + item + " *"}</p>
@@ -574,13 +575,13 @@ export default function CarteComponent() {
                   <p className={styles.price}>4.00 €</p>
                 </div>
                 <div>
-                  <p>Et baklava</p>
+                  <p>Baklava</p>
                   <p className={styles.price}>4.00 €</p>
                 </div>
               </article>
             </div>
           </div>
-          <h2 className={styles.sauce}>SAUCE</h2>
+          <h2 className={styles.sauce}>SAUCES</h2>
           <div className={styles.souceList}>
             {displayedItems.map((item, index) => (
               <p key={index}>{"* " + item + " *"}</p>
