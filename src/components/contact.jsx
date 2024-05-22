@@ -2,7 +2,8 @@ import { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImage from "../assets/img/sandwichmenu.png";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhoneAlt, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 
 export default function ContactComponent() {
   const form = useRef();
@@ -15,7 +16,7 @@ export default function ContactComponent() {
     setFormDetails({
       ...formDetails,
       [field]: value,
-    }); 
+    });
   };
 
   const resetForm = () => {
@@ -80,18 +81,35 @@ export default function ContactComponent() {
     <section className="contact" id="contact">
       <Container>
         <Row className="align-items-center">
-          <Col className="contactImage">
+          <Col className="contactDetails">
+            <h2>Nous contactez</h2>
+            <p>
+              <FontAwesomeIcon icon={faPhoneAlt} /> Téléphone :{" "}
+              <a href="tel:+33954000135">09 54 00 01 35</a>
+
+            </p>
+            <p>
+              <FontAwesomeIcon icon={faMapMarkerAlt} /> Visitez-nous 📍
+              <a
+                href="https://www.google.com/maps?q=9+Passage+des+Halles,+74960+Annecy,+France"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Cliquez pour la carte
+              </a>
+            </p>
             <img src={contactImage} alt="Contact me" />
           </Col>
+
           <Col size={12} md={6}>
-            <h2>Nous contactez</h2>
+            <h2>Écrivez-nous</h2>
             <form ref={form} onSubmit={sendEmail}>
               <Row>
                 <Col size={12} sm={6} className="px-1">
                   <input
                     required
                     type="text"
-                    name="user_name" 
+                    name="user_name"
                     placeholder="Prenom"
                     value={formDetails.user_name}
                     onChange={(e) => onFormUpdate("user_name", e.target.value)}
